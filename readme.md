@@ -6,7 +6,7 @@ requires chingu
 
 $ gem install gosu
 $ gem install chingu
-$ git clone ______________
+$ git clone https://github.com/MattLemmon/CptnCat.git
 $ cd CptnCat
 /CptnCat$ ruby cptncat.rb
 
