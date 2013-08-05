@@ -1,0 +1,20 @@
+
+
+Subject to licenses of gosu, chingu, rubygems, etc.
+These include, but are not limited to:
+		  GNU LESSER GENERAL PUBLIC LICENSE
+          MIT LICENSE
+
+CPTN. RUBY WITH WALL JUMP
+Thank yous: ---
+  Thanks Maverick for Cptn. Ruby with Wall Jump.
+  Thanks Julian for Gosu. It is awesome.
+
+
+                       ____                       
+                      / __ \                         
+                     / /  \ \                        
+                     \ \  / /                        
+                      \/  \/                         
+                    opensource                       
+
