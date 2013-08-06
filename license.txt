@@ -1,10 +1,11 @@
 
-Subject to licenses of gosu, chingu, rubygems, etc.
+Gosu and Chingu are subject to the MIT LICENSE, and the 
+GNU LESSER GENERAL PUBLIC LICENCE (Version 2.1), respectively.
 
 
-CPTN. RUBY WITH WALL JUMP
+CAPTAIN RUBY WITH WALL JUMP
 Thank yous: ---
-  Thanks Maverick for epic Cptn. Ruby with Wall Jump.
+  Thanks Maverick for epic Captain Ruby with Wall Jump.
   Thanks Julian for Gosu. It is awesome.
 
 

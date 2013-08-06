@@ -34,7 +34,7 @@ class Game < Chingu::Window
     Sound["media/chime2.ogg"]
     Sound["media/meow.ogg"]
     Sound["media/crush.ogg"]
-    Sound["media/intro.ogg"].play(0.6) # Intro Music
+    Sound["media/intro.ogg"].play(0.5) # Intro Music
   end
   def update
     move_x = 0
@@ -111,6 +111,9 @@ class CptnRuby < Chingu::GameObject
   end
   
   def update(move_x)
+    if @wall == 0
+      @cooling_down = 32
+    end
     # Select image depending on action
     if (move_x == 0)
         @cur_image = (milliseconds / 175 % 8 == 0) ? @blink : @standing
@@ -204,10 +207,10 @@ class CptnRuby < Chingu::GameObject
       @vy = -23
       @wall = 0 #Not climing walls anymore you monkey
       if @boing == true
-        Sound["media/boing1.ogg"].play(0.5)
+        Sound["media/boing1.ogg"].play(0.4)
         @boing = false
       else
-        Sound["media/boing2.ogg"].play(0.5)
+        Sound["media/boing2.ogg"].play(0.4)
         @boing = true
       end
     end    
@@ -216,10 +219,10 @@ class CptnRuby < Chingu::GameObject
         @vx = 12 * @wall #Set the x velocity according to the direction we face from the wall
         @wall = 0
       if @boing == true
-        Sound["media/boing1.ogg"].play(0.5)
+        Sound["media/boing1.ogg"].play(0.4)
         @boing = false
       else
-        Sound["media/boing2.ogg"].play(0.5)
+        Sound["media/boing2.ogg"].play(0.4)
         @boing = true
       end
     end
@@ -233,16 +236,16 @@ class CptnRuby < Chingu::GameObject
 
   def chime
 #    Sound["media/chime2.ogg"].play(0.5)
-    if rand(5) == 1
+    if rand(6) == 1
       Sound["media/meow.ogg"].play(1.0)
-      Sound["media/chime2.ogg"].play(0.4)
+      Sound["media/chime2.ogg"].play(0.3)
     else
       Sound["media/chime2.ogg"].play(0.5)
     end
   end
 
   def crush     # wall-climb sound effect
-    if @cooling_down >= 32
+    if @cooling_down >= 26
       Sound["media/crush.ogg"].play(0.5)
       @cooling_down = 0
     else
